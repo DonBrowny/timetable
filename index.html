@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeTable</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/main.js"></script>
+</head>
+
+<body>
+    <div id="table">
+        <!-- <ol>
+            <li class="tableHeader">
+                <div class="description">Days</div>
+                <div>5.00</div>
+                <div>6.00</div>
+                <div>7.00</div>
+                <div>8.00</div>
+                <div>9.00</div>
+                <div>10.00</div>
+            </li>
+            <li class="tableRow">
+                <div class="description">Monday</div>
+                <div class="startCell"></div>
+                <div></div>
+                <div class="startCell"></div>
+                <div></div>
+                <div class="startCell"></div>
+                <div></div>
+                <div class="startCell"></div>
+                <div></div>
+                <div class="startCell"></div>
+                <div></div>
+                <div class="startCell"></div>
+                <div></div>
+            </li>
+            <li class="tableRow">
+                <div class="description">Tuesday</div>
+                <div class="startCell"></div>
+                <div></div>
+                <div class="startCell"></div>
+                <div></div>
+                <div class="startCell"></div>
+                <div></div>
+                <div class="startCell"></div>
+                <div></div>
+                <div class="startCell"></div>
+                <div></div>
+                <div class="startCell"></div>
+                <div></div>
+            </li>
+            <li class="tableRow">
+                <div class="description">Wednesday</div>
+                <div class="startCell"></div>
+                <div></div>
+                <div class="startCell"></div>
+                <div></div>
+                <div class="startCell"></div>
+                <div></div>
+                <div class="startCell"></div>
+                <div></div>
+                <div class="startCell"></div>
+                <div></div>
+                <div class="startCell"></div>
+                <div></div>
+            </li>
+        </ol> -->
+    </div>
+    <script>
+        let options = {
+            descColumn: ['Sunday', 'Monday', 'Tuesday', 'Wednesday'],
+            startTime: '00:00',
+            endTime: '24:00',
+            interval: 30
+        }
+        let timeTable = new TimeTable('table', options);
+        timeTable.createTable();
+    </script>
+</body>
+
+</html>

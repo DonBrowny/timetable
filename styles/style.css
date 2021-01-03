@@ -1,0 +1,40 @@
+:root {
+    --headerClmCount: 6;
+    --rowClmCount: 12;
+  }
+
+
+ol{
+    border: 1px solid black;
+    padding: 0px
+}
+
+ol li:nth-child(n+3){
+    border-top:1px solid grey;
+}
+
+ol li:first-child{
+    border-bottom:1px solid black;
+}
+
+.tableHeader div:not(:first-child){
+    border-left: 1px solid black;
+}
+
+.tableRow div:not(.startCell):not(.description){
+    border-left:1px solid grey;
+}
+
+.startCell{
+    border-left:1px solid black;
+}
+
+.tableHeader{
+    display: grid;
+    grid-template-columns: minmax(80px, 10%)repeat(var(--headerClmCount), 1fr);
+}
+
+.tableRow{
+    display: grid;
+    grid-template-columns: minmax(80px, 10%) repeat(var(--rowClmCount), 1fr);
+}
